@@ -8,7 +8,7 @@ const notFoundRoutes = require('./routes/notFound');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(adminRoutes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(notFoundRoutes);
 
